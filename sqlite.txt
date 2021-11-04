@@ -1,0 +1,8 @@
+﻿подключить sqlite:
+toolbox и sqldata версии должны совпадать
+добавить ef6.2.0 ru
+добавить провайдер
+<provider invariantName="System.Data.SQLite" type="System.Data.SQLite.EF6.SQLiteProviderServices, System.Data.SQLite.EF6" />
+
+data source=d:\шоп\shop.db&quot;
+data source=|DataDirectory|shop.db&quot; из текущей директории

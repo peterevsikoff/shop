@@ -1,0 +1,46 @@
+﻿<Window x:Class="shop_sqlite.Win_tovar"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:shop_sqlite"
+        mc:Ignorable="d"
+        Title="Товары" Height="300" Width="300" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid Background="Honeydew">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Категория:" FontSize="16" Margin="5"/>
+        <ComboBox x:Name="win_tovar_cmb_kategory" Margin="5" Grid.Column="1" DisplayMemberPath="NaimenKategory" SelectedIndex="0"/>
+        <Label Content="Артикул:" Grid.Row="1" FontSize="16" Margin="5"/>
+        <TextBox x:Name="win_tovar_txt_artikul" Grid.Row="1" Grid.Column="1" Margin="5"/>
+        <Label Content="Наименование:" Grid.Row="2" FontSize="16" Margin="5"/>
+        <TextBox x:Name="win_tovar_txt_naimenovanie" Grid.Row="2" Grid.Column="1" Margin="5"/>
+        <Label Content="Оптовая цена:" Grid.Row="3" FontSize="16" Margin="5"/>
+        <TextBox x:Name="win_tovar_txt_optcena" Grid.Row="3" Grid.Column="1" Margin="5"/>
+        <Label Content="Розничная цена:" Grid.Row="4" FontSize="16" Margin="5"/>
+        <TextBox x:Name="win_tovar_txt_rozncena" Grid.Row="4" Grid.Column="1" Margin="5"/>
+        <Label Content="Остаток:" Grid.Row="5" FontSize="16" Margin="5"/>
+        <TextBox x:Name="win_tovar_txt_ostatok" Grid.Row="5" Grid.Column="1" Margin="5"/>
+        <Button x:Name="btn_win_tovar_ok" Content="OK" Margin="20,5,20,5" Grid.Row="6" Click="btn_win_tovar_ok_Click">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button x:Name="btn_win_tovar_cancel" Content="Отмена" Margin="20,5,20,5" Grid.Row="6" Grid.Column="1" Click="btn_win_tovar_cancel_Click">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+    </Grid>
+</Window>
